@@ -1,5 +1,6 @@
 import React from 'react';
-import PageLayout from '../../components/layout/PageLayout';
+import { Link } from 'react-router-dom';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { Calendar, MapPin, ArrowRight, Share2, Tag, Bell } from 'lucide-react';
 
 export default function EventsCampaigns() {
@@ -116,6 +117,20 @@ export default function EventsCampaigns() {
                         </div>
                     </div>
                 ))}
+            </div>
+        </div>
+
+        {/* Past Events & Social Media Highlights */}
+        <div className="section-padding" style={{ borderRadius: 'var(--radius-md)', padding: '4rem 0' }}>
+            <div className="text-center mb-8">
+                <span className="badge">Social Feed</span>
+                <h2>Past Events & <span className="text-primary-brand">Highlights</span></h2>
+                <p className="text-secondary" style={{ maxWidth: '600px', margin: '0 auto' }}>Follow our journey and stay updated with our latest activities through our Instagram feed.</p>
+            </div>
+            
+            <div className="instagram-feed-container card-flat bg-white" style={{ padding: '2rem', borderRadius: 'var(--radius-md)', minHeight: '400px' }}>
+                {/* Elfsight Instagram Feed */}
+                <div className="elfsight-app-287c5ce5-772b-447a-9fd5-f54417312fa6" data-elfsight-app-lazy></div>
             </div>
         </div>
 

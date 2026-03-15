@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../components/layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { Heart, Target, Users, ArrowRight, ShieldCheck, QrCode } from 'lucide-react';
 import './Donation.css';
 import scannerImage from '../../assets/Scanner.jpeg';

@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../components/layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { Bus, Train, Smartphone, Hospital, Search, Landmark, Shield, Flame, Heart, Mail, CreditCard, User, Briefcase, ArrowRight, Phone } from 'lucide-react';
 import './Resources.css';
 

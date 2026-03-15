@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import PageLayout from '../../components/layout/PageLayout';
-import { Search, Phone, Mail, MapPin, ExternalLink, Hospital, Pill, Activity, GraduationCap, Users, Landmark, CreditCard, ShoppingBag, Utensils, Tool, Calendar, Truck } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
+import { Search, Phone, Mail, MapPin, ExternalLink, Hospital, Pill, Activity, GraduationCap, Users, Landmark, CreditCard, ShoppingBag, Utensils, Wrench, Calendar, Truck } from 'lucide-react';
 import './Directory.css';
 
 const categories = [
@@ -13,7 +14,7 @@ const categories = [
   { id: 'banks', icon: <CreditCard />, label: 'Banks & Finance' },
   { id: 'grocery', icon: <ShoppingBag />, label: 'Grocery & Daily Needs' },
   { id: 'restaurants', icon: <Utensils />, label: 'Restaurants & Food' },
-  { id: 'hardware', icon: <Tool />, label: 'Hardware & Plumbing' },
+  { id: 'hardware', icon: <Wrench />, label: 'Hardware & Plumbing' },
   { id: 'events', icon: <Calendar />, label: 'Events & Catering' },
   { id: 'logistics', icon: <Truck />, label: 'Courier & Logistics' },
 ];

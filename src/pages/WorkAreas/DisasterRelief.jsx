@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../components/layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { ShieldAlert, Zap, Truck, Heart, CheckCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './WorkArea.css';

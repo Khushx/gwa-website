@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Users, BookOpen, HandHeart, ArrowRight, CheckCircle2, Star, Quote } from 'lucide-react';
+import { Heart, Users, BookOpen, HandHeart, ArrowRight, CheckCircle2, Star, Quote, Target } from 'lucide-react';
 import './Home.css';
 
 // Assets

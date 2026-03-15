@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PageLayout from '../layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { Shield, FileText, Download, CheckCircle, ExternalLink, Scale, Building2, Award } from 'lucide-react';
 import './Resources.css';
 

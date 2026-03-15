@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../components/layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { Eye, Target, Sparkles } from 'lucide-react';
 import './About.css';
 

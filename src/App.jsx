@@ -49,6 +49,7 @@ import LocalInformation from './pages/Resources/LocalInformation';
 import EventsCampaigns from './pages/MediaEvents/EventsCampaigns';
 
 function App() {
+  console.log('App: Rendering Routes');
   return (
     <BrowserRouter>
       <div className="app-container">

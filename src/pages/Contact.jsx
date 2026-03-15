@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../components/layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Twitter, Linkedin, Youtube, MessageCircle } from 'lucide-react';
 import './Contact.css';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../components/layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { Instagram, ExternalLink, Camera } from 'lucide-react';
 
 export default function Gallery() {

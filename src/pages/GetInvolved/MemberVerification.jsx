@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Search, CheckCircle, XCircle, User, ShieldCheck, Calendar, Phone, MapPin, Briefcase } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import './Verification.css';
-import PageLayout from '../../components/layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 
 export default function MemberVerification() {
   const [memberId, setMemberId] = useState('');

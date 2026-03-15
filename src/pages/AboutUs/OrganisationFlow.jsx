@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../components/layout/PageLayout';
+import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { GitBranch, Users, ShieldCheck, UserCheck } from 'lucide-react';
 import './About.css';
 
