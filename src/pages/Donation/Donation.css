@@ -1,0 +1,162 @@
+.donation-hero h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.cause-card {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cause-header {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.cause-icon {
+  color: var(--text-primary);
+}
+
+.cause-title {
+  font-size: 1.75rem;
+  margin-bottom: 2.5rem;
+  min-height: 4rem;
+}
+
+.progress-container {
+  margin-top: auto;
+  margin-bottom: 2.5rem;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 12px;
+  background-color: #f0f0f0;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 100px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.goal {
+  color: #ccc;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Scanner Section */
+.scanner-img-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.scanner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.scanner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--secondary-accent);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0.1;
+}
+
+.bank-details-box {
+  background-color: #fff;
+  color: var(--text-primary);
+}
+
+.bank-info-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.value {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.security-note {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--primary-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .donation-hero h1 { font-size: 3.5rem; }
+  .scanner-img-container { width: 100%; }
+}

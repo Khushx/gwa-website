@@ -1,0 +1,106 @@
+/* Work Areas Page Styles */
+.work-area-page {
+  padding-bottom: 4rem;
+}
+
+.work-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--primary-bg);
+  border-radius: var(--radius-xl);
+}
+
+.work-icon-ring {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.initiative-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .initiative-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.initiative-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--primary-brand);
+  transition: all 0.3s ease;
+}
+
+.initiative-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.impact-box {
+  background: var(--dark);
+  color: white;
+  border-radius: var(--radius-xl);
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.impact-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.impact-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.impact-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.impact-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+}
+
+.work-cta {
+  background: var(--sand);
+  padding: 3rem;
+  border-radius: var(--radius-lg);
+}
+
+.work-cta h2 {
+    margin-bottom: 1rem;
+}
+
+.work-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
