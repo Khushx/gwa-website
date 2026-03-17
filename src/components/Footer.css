@@ -56,7 +56,7 @@
 .social-links a:hover {
   background-color: var(--primary-brand);
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(37, 150, 190, 0.3);
 }
 
 .footer-heading {
@@ -82,7 +82,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--secondary-accent);
+  color: var(--primary-brand);
   padding-left: 5px;
 }
 
@@ -102,13 +102,15 @@
 }
 
 .contact-icon {
-  color: var(--secondary-accent);
+  color: var(--primary-brand);
   flex-shrink: 0;
   margin-top: 0.25rem;
 }
 
-.email-row {
-  white-space: nowrap;
+.email-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .footer-bottom {
@@ -127,7 +129,7 @@
 }
 
 .khush-link {
-  color: var(--secondary-accent);
+  color: var(--primary-brand);
   font-weight: 600;
   text-decoration: underline;
 }
@@ -151,6 +153,12 @@
   .bottom-content {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .bottom-right {
+    text-align: right;
   }
 }
 

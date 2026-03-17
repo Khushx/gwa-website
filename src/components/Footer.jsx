@@ -26,11 +26,11 @@ export default function Footer() {
             Ghatkopar Welfare Association (GWA) is a community-focused non-profit organisation committed to promoting social welfare, civic responsibility, and sustainable development in Mumbai.
           </p>
           <div className="social-links">
-             {socialLinks.map((social, idx) => (
-                <a key={idx} href={social.url} target="_blank" rel="noreferrer" aria-label={social.label}>
-                  {social.icon}
-                </a>
-             ))}
+            {socialLinks.map((social, idx) => (
+              <a key={idx} href={social.url} target="_blank" rel="noreferrer" aria-label={social.label}>
+                {social.icon}
+              </a>
+            ))}
           </div>
         </div>
 
@@ -38,20 +38,20 @@ export default function Footer() {
           <h4 className="footer-heading">Quick Links</h4>
           <ul>
             <li><Link to="/about/overview">About Us</Link></li>
-            <li><Link to="/work-areas/food-security">Our Work Areas</Link></li>
-            <li><Link to="/get-involved/volunteer">Get Involved</Link></li>
-            <li><Link to="/media-events/gallery">Media & Events</Link></li>
-            <li><Link to="/about/policies">Laws & Policies</Link></li>
+            <li><Link to="/get-involved/volunteer">Volunteer</Link></li>
+            <li><Link to="/get-involved/partner">Partner with Us</Link></li>
+            <li><Link to="/donate">Donate</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
 
         <div className="footer-links">
           <h4 className="footer-heading">Resources</h4>
           <ul>
+            <li><Link to="/media-events/gallery">Past Events</Link></li>
             <li><Link to="/directory">Business Directory</Link></li>
             <li><Link to="/resources/local-info">Local Information</Link></li>
-            <li><Link to="/resources/legal-licenses">Legal & Licenses</Link></li>
-            <li><Link to="/about/complaint">File a Complaint</Link></li>
+            <li><Link to="/resources/legal-licenses">Legal & Licences</Link></li>
             <li><Link to="/get-involved/verification">Member Verification</Link></li>
           </ul>
         </div>
@@ -69,17 +69,21 @@ export default function Footer() {
             </li>
             <li>
               <Mail size={18} className="contact-icon" />
-              <span className="email-row">ghatkoparassociation@gmail.com | info@ghatkoparassociation.org</span>
+              <div className="email-column">
+                <span>ghatkoparassociation@gmail.com</span>
+                <span>info@ghatkoparassociation.org</span>
+              </div>
             </li>
           </ul>
         </div>
       </div>
-      
+
       <div className="footer-bottom">
         <div className="container bottom-content">
           <p>&copy; {new Date().getFullYear()} Ghatkopar Welfare Association. All rights reserved.</p>
-          <p className="credit-text">Crafted with 🖤 by <a href="https://khushnuma.vercel.app/" target="_blank" rel="noreferrer" className="khush-link">Khush</a></p>
-          <p className="website-link">www.ghatkoparassociation.org</p>
+          <div className="bottom-right">
+            <p className="credit-text">Crafted with 🤍 by <a href="https://khushnuma.vercel.app/" target="_blank" rel="noreferrer" className="khush-link">Khush</a></p>
+          </div>
         </div>
       </div>
     </footer>

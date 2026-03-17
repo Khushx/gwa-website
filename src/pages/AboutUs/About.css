@@ -1,6 +1,6 @@
 /* About Us Section Styles */
 .about-page {
-  padding-bottom: 4rem;
+  padding-bottom: 0rem;
 }
 
 .about-intro-card {
@@ -56,6 +56,46 @@
   color: var(--text-secondary);
 }
 
+.flex.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.w-full {
+  border-radius: 20px;
+}
+
+.gap-small {
+  gap: 1rem;
+}
+
+.border-top {
+  padding-top: 24px;
+  /* or 32px */
+}
+
+.page-subtitle {
+  margin-bottom: 1px !important;
+}
+
+@media (max-width: 768px) {
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.goal-card {
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
 @media (min-width: 992px) {
   .profile-card {
     flex-direction: row;
@@ -104,4 +144,23 @@
   font-weight: 600;
   font-size: 0.875rem;
   margin-top: 0.25rem;
+}
+
+.profile-img-container {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--primary-bg);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.leader-card:hover .profile-img {
+  transform: scale(1.05);
 }

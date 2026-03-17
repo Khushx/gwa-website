@@ -6,59 +6,93 @@ import './WorkArea.css';
 
 export default function DisasterRelief() {
   const initiatives = [
-    { title: 'Emergency Response', desc: 'Mobilising volunteer teams for immediate rescue and support during Mumbai floods or fires.' },
-    { title: 'Relief Distribution', desc: 'Providing dry ration, medication, and essential kits to families displaced by crises.' },
-    { title: 'Rehabilitation Support', desc: 'Long-term assistance for rebuilding livelihoods after a disaster has passed.' },
-    { title: 'Resource Mobilization', desc: 'Partnering with logistics and supply chain providers for rapid movement of aid.' }
+    { 
+        title: 'Emergency Response', 
+        desc: 'Mobilising volunteer teams for immediate rescue, first aid, and support during floods or fires.',
+        image: '/images/food-drive.jpeg'
+    },
+    { 
+        title: 'Relief Distribution', 
+        desc: 'Providing dry ration, medication, blankets, and essential kits to families displaced by seasonal calamities.',
+        image: '/images/food-side.jpeg'
+    },
+    { 
+        title: 'Rehabilitation Support', 
+        desc: 'Long-term assistance for rebuilding livelihoods and housing after the immediate crisis has passed.',
+        image: '/images/together.jpg'
+    },
+    { 
+        title: 'Resource Logistics', 
+        desc: 'Partnering with logistics providers for rapid movement of aid and essential supplies across affected zones.',
+        image: '/images/officer.jpeg'
+    }
   ];
 
   return (
-    <PageLayout title="Disaster Relief & Response" subtitle="Standing with the community during their toughest hours.">
+    <PageLayout 
+      title="Disaster Relief & Response" 
+      subtitle="Standing with the community as the first line of defense during their toughest hours."
+    >
       <div className="work-area-page">
-        <div className="work-header">
+        <div className="work-header mb-huge">
           <div className="work-icon-ring"><ShieldAlert size={40} className="text-primary-brand" /></div>
           <div>
+            <span className="badge badge-accent mb-2">Sustainable Development Goal 11: Resilient Communities</span>
             <h2 className="mb-2">Rapid Response for Crises</h2>
-            <p className="text-secondary m-0">When disaster strikes, GWA is on the frontlines to ensure that help reaches the most vulnerable without delay.</p>
+            <p className="text-secondary max-w-3xl m-0 leading-relaxed text-lg">
+                When disaster strikes, GWA is on the frontlines. We mobilise resources and volunteers instantly to ensure that life-saving help reaches the most vulnerable residents without delay.
+            </p>
           </div>
         </div>
 
-        <h3 className="mb-8">Relief Strategy</h3>
-        <div className="initiative-grid">
-          {initiatives.map((item, idx) => (
-            <div key={idx} className="initiative-card" style={{ borderTopColor: 'var(--accent)' }}>
-              <h4 className="mb-3">{item.title}</h4>
-              <p className="text-secondary text-sm m-0">{item.desc}</p>
+        <section className="mb-huge">
+            <h2 className="section-title text-center mb-large">Relief Strategy</h2>
+            <div className="grid-2">
+            {initiatives.map((item, idx) => (
+                <div key={idx} className="card-flat bg-white border-subtle overflow-hidden flex align-center p-0 card-hover-up">
+                    <div className="w-1/3 h-full min-h-[200px]">
+                        <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                    </div>
+                    <div className="w-2/3 p-8">
+                        <h3 className="mb-3 text-xl">{item.title}</h3>
+                        <p className="text-secondary text-sm m-0 leading-relaxed">{item.desc}</p>
+                    </div>
+                </div>
+            ))}
             </div>
-          ))}
-        </div>
+        </section>
 
-        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
-          <h2 className="text-white">Standing Strong Together</h2>
-          <div className="impact-stats">
-            <div className="impact-stat">
-              <span className="impact-number" style={{ color: 'white' }}>2,500+</span>
-              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Families Helped</span>
-            </div>
-            <div className="impact-stat">
-              <span className="impact-number" style={{ color: 'white' }}>48 hrs</span>
-              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Response Time</span>
-            </div>
-            <div className="impact-stat">
-              <span className="impact-number" style={{ color: 'white' }}>10+</span>
-              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Townships Covered</span>
-            </div>
+        <div className="impact-box mb-huge bg-dark text-white p-16 rounded-3xl text-center relative overflow-hidden">
+          <div className="relative z-10">
+              <span className="badge badge-accent mb-4">Our Crisis Impact</span>
+              <h2 className="text-white text-4xl mb-huge">Standing Strong Together</h2>
+              <div className="impact-stats">
+                <div className="impact-stat">
+                  <span className="impact-number">2,500+</span>
+                  <span className="impact-label">Families Helped</span>
+                </div>
+                <div className="impact-stat">
+                  <span className="impact-number">48 hrs</span>
+                  <span className="impact-label">Response Time</span>
+                </div>
+                <div className="impact-stat">
+                  <span className="impact-number">10+</span>
+                  <span className="impact-label">Townships Covered</span>
+                </div>
+              </div>
           </div>
+          <div className="absolute top-0 right-0 w-80 h-80 bg-primary-brand/10 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="work-cta">
+        <div className="work-cta bg-sand p-16 rounded-3xl border-subtle">
           <div className="grid-2 align-center gap-large">
             <div>
-              <h2>Contribute to Relief Fund</h2>
-              <p className="text-secondary">We maintain a reserve fund to ensure we can act instantly during seasonal calamities or accidents.</p>
+              <h2 className="text-3xl mb-4">Contribute to Relief Fund</h2>
+              <p className="text-secondary text-lg leading-relaxed m-0">We maintain a reserve emergency fund to ensure we can act instantly during seasonal calamities, fires, or unforeseen accidents.</p>
             </div>
-            <div className="flex gap-small justify-end">
-              <Link to="/donate" className="btn btn-primary">Donate to Relief <ArrowRight size={16} className="ml-2" /></Link>
+            <div className="flex flex-center gap-normal justify-end">
+              <Link to="/donate" className="btn btn-primary px-10">Donate to Relief <ArrowRight size={18} className="ml-2" /></Link>
+              <Link to="/get-involved/volunteer" className="btn btn-outline border-primary px-10">Join Rescue Team</Link>
             </div>
           </div>
         </div>

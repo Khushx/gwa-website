@@ -2,11 +2,6 @@
   padding-bottom: 4rem;
 }
 
-.contact-info-card {
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
 .info-icon-box {
   width: 60px;
   height: 60px;
@@ -14,80 +9,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1.5rem;
 }
 
-.contact-form-container {
+.contact-form-card {
   padding: 4rem;
-  background: white;
+  border-top: 5px solid var(--primary-brand);
 }
 
-.form-group label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-  color: var(--text-primary);
-}
-
-.form-group input, 
-.form-group textarea {
+.form-control {
   width: 100%;
-  padding: 1rem 1.25rem;
-  border: 1px solid rgba(0,0,0,0.1);
-  border-radius: var(--radius-md);
-  font-family: var(--font-sans);
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
   font-size: 1rem;
   transition: all 0.3s ease;
+  background-color: #fcfdfe;
 }
 
-.form-group input:focus, 
-.form-group textarea:focus {
+.form-control:focus {
   outline: none;
   border-color: var(--primary-brand);
-  background-color: var(--primary-bg);
+  box-shadow: 0 0 0 4px rgba(37, 150, 190, 0.1);
+  background-color: white;
 }
 
-.social-icon-btn {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-brand);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.social-icon-btn:hover {
-  background: var(--primary-brand);
-  color: white;
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
+.max-w-3xl {
+  max-width: 48rem;
 }
 
-.gap-huge {
-  gap: 6rem;
-}
-
-.w-full {
-  width: 100%;
-}
-
-@media (max-width: 1024px) {
-  .gap-huge {
-    gap: 3rem;
-  }
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 @media (max-width: 768px) {
-  .contact-form-container {
+  .contact-form-card {
     padding: 2.5rem 1.5rem;
-  }
-  
-  .grid-3, .grid-2 {
-    grid-template-columns: 1fr;
   }
 }

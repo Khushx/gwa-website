@@ -24,8 +24,8 @@ const navItems = [
       { title: 'Goals & Key Beliefs', path: '/about/goals' },
       { title: 'Who We Are', path: '/about/who-we-are' },
       { title: 'History', path: '/about/history' },
-      { title: 'Founder & Director', path: '/about/founder-director' },
-      { title: 'Chairman & President', path: '/about/chairman-president' },
+      { title: 'Founder & President', path: '/about/founder-president' },
+      { title: 'Chairman & Director', path: '/about/chairman-director' },
       { title: 'Board & Committee', path: '/about/board' },
       { title: 'Organisation Flow', path: '/about/organisation-flow' },
       { title: 'Values & Objectives', path: '/about/values' },
@@ -66,14 +66,10 @@ const navItems = [
     path: '#',
     mega: false,
     dropdown: [
+      { title: 'Media', path: '/media-events/media' },
       { title: 'Gallery / Past Events', path: '/media-events/gallery' },
       { title: 'Events & Campaigns', path: '/media-events/events' },
     ]
-  },
-  {
-    title: 'Directory',
-    path: '/directory',
-    mega: false,
   },
   {
     title: 'Resources',
@@ -83,6 +79,11 @@ const navItems = [
       { title: 'Local Information', path: '/resources/local-info' },
       { title: 'Legal & Licenses', path: '/resources/legal-licenses' },
     ]
+  },
+  {
+    title: 'Directory',
+    path: '/directory',
+    mega: false,
   },
   { title: 'Contact', path: '/contact' }
 ];
@@ -103,42 +104,39 @@ export default function Header() {
           <Link to="/" className="header-logo">
             <img src={logoImage} alt="Ghatkopar Welfare Association" className="logo-img" />
           </Link>
-          
+
           {/* Desktop Navigation */}
           <nav className="desktop-nav">
             <ul className="nav-list">
               {navItems.map((item) => (
                 <li key={item.title} className="nav-item">
                   {item.dropdown ? (
-                    <div className="dropdown-container">
-                      <button 
-                        className="nav-link dropdown-toggle"
+                    <div
+                      className="dropdown-container"
+                      onMouseEnter={() => setActiveDropdown(item.title)}
+                      onMouseLeave={() => setActiveDropdown(null)}
+                    >
+                      <button
+                        className={`nav-link dropdown-toggle ${activeDropdown === item.title ? 'active' : ''}`}
                         onClick={() => toggleDropdown(item.title)}
-                        onMouseEnter={() => setActiveDropdown(item.title)}
-                        onMouseLeave={() => setActiveDropdown(null)}
+                        aria-expanded={activeDropdown === item.title}
                       >
-                        {item.title} <ChevronDown size={14} />
+                        {item.title} <ChevronDown size={14} className={`chevron ${activeDropdown === item.title ? 'rotate' : ''}`} />
                       </button>
-                      {activeDropdown === item.title && (
-                        <div 
-                          className={`dropdown-menu ${item.mega ? 'mega-menu' : ''}`}
-                          onMouseEnter={() => setActiveDropdown(item.title)}
-                          onMouseLeave={() => setActiveDropdown(null)}
-                        >
-                          <div className={item.mega ? 'mega-menu-grid' : 'dropdown-grid'}>
-                            {item.dropdown.map((subItem) => (
-                              <Link 
-                                key={subItem.title} 
-                                to={subItem.path} 
-                                className="dropdown-item"
-                                onClick={() => setActiveDropdown(null)}
-                              >
-                                {subItem.title}
-                              </Link>
-                            ))}
-                          </div>
+                      <div className={`dropdown-menu ${activeDropdown === item.title ? 'show' : ''} ${item.mega ? 'mega-menu' : ''}`}>
+                        <div className={item.mega ? 'mega-menu-grid' : 'dropdown-grid'}>
+                          {item.dropdown.map((subItem) => (
+                            <Link
+                              key={subItem.title}
+                              to={subItem.path}
+                              className="dropdown-item"
+                              onClick={() => setActiveDropdown(null)}
+                            >
+                              {subItem.title}
+                            </Link>
+                          ))}
                         </div>
-                      )}
+                      </div>
                     </div>
                   ) : (
                     <Link to={item.path} className="nav-link">{item.title}</Link>
@@ -150,9 +148,9 @@ export default function Header() {
 
           <div className="header-actions">
             <Link to="/donate" className="btn btn-primary donate-btn">Donate Now</Link>
-            
+
             {/* Mobile Menu Button */}
-            <button 
+            <button
               className="mobile-menu-btn"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
@@ -170,7 +168,7 @@ export default function Header() {
                 <li key={item.title} className="mobile-nav-item">
                   {item.dropdown ? (
                     <>
-                      <button 
+                      <button
                         className="mobile-nav-link"
                         onClick={() => toggleDropdown(item.title)}
                       >
@@ -180,8 +178,8 @@ export default function Header() {
                         <ul className="mobile-dropdown-menu">
                           {item.dropdown.map((subItem) => (
                             <li key={subItem.title}>
-                              <Link 
-                                to={subItem.path} 
+                              <Link
+                                to={subItem.path}
                                 className="mobile-dropdown-item"
                                 onClick={() => {
                                   setIsOpen(false);
@@ -196,8 +194,8 @@ export default function Header() {
                       )}
                     </>
                   ) : (
-                    <Link 
-                      to={item.path} 
+                    <Link
+                      to={item.path}
                       className="mobile-nav-link"
                       onClick={() => setIsOpen(false)}
                     >

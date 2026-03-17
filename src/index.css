@@ -2,32 +2,34 @@
 
 :root {
   /* Core Brand Colors */
-  --primary-bg: #DAF0F7;
+  --primary-bg: #E3F2FD;
+  /* Lighter soft blue */
   --primary-brand: #2596BE;
-  --secondary-accent: #A9E49E;
-  
+  --secondary-accent: #64B5F6;
+  /* Professional soft blue accent */
+
   /* High Contrast Colors */
   --dark-bg: #09212C;
   --sand-bg: #F8F2E9;
-  
+
   /* Text Colors */
   --text-primary: #000000;
   --text-secondary: #444444;
   --text-light: #ffffff;
-  
+
   /* Additional UI Colors */
   --card-bg: #ffffff;
-  --border-color: rgba(0,0,0,0.08);
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-  --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
-  --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
-  
+  --border-color: rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
+
   /* Layouts & Utilities */
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-pill: 100px;
-  
+
   /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
@@ -60,19 +62,37 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.15;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
   letter-spacing: -0.03em;
 }
 
-h1 { font-size: 4rem; font-weight: 800; }
-h2 { font-size: 3.25rem; }
-h3 { font-size: 2.25rem; }
-h4 { font-size: 1.5rem; }
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
 
 p {
   margin-bottom: 1.25rem;
@@ -89,41 +109,57 @@ ul {
   list-style: none;
 }
 
-/* Layout Utilities */
-.container {
-  width: 100%;
-  max-width: 1360px;
-  margin: 0 auto;
-  padding: 0 2.5rem;
-}
+/* Spacing Utilities */
+.py-0 { padding-top: 0 !important; padding-bottom: 0 !important; }
+.py-sm { padding-top: var(--space-sm) !important; padding-bottom: var(--space-sm) !important; }
+.py-md { padding-top: var(--space-md) !important; padding-bottom: var(--space-md) !important; }
+.py-lg { padding-top: var(--space-lg) !important; padding-bottom: var(--space-lg) !important; }
+.py-xl { padding-top: var(--space-xl) !important; padding-bottom: var(--space-xl) !important; }
 
-.section-padding {
-  padding: var(--space-xl) 0;
-}
+.mb-0 { margin-bottom: 0 !important; }
+.mb-tiny { margin-bottom: 0.5rem !important; }
+.mb-small { margin-bottom: 1rem !important; }
+.mb-normal { margin-bottom: 1.5rem !important; }
+.mb-large { margin-bottom: 3rem !important; }
+.mb-huge { margin-bottom: 6rem !important; }
 
-.m-0 { margin: 0 !important; }
-.mb-2 { margin-bottom: 2rem !important; }
-.mb-4 { margin-bottom: 4rem !important; }
-.mt-2 { margin-top: 2rem !important; }
-.mt-4 { margin-top: 4rem !important; }
+.mt-0 { margin-top: 0 !important; }
+.mt-tiny { margin-top: 0.5rem !important; }
+.mt-small { margin-top: 1rem !important; }
+.mt-normal { margin-top: 1.5rem !important; }
+.mt-large { margin-top: 3rem !important; }
 
 /* Flex & Grid */
 .flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
 .flex-center { display: flex; align-items: center; justify-content: center; }
 .justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
 .align-center { align-items: center; }
+.align-start { align-items: flex-start; }
+
+.gap-tiny { gap: 0.5rem; }
 .gap-small { gap: 1rem; }
-.gap-md { gap: 2rem; }
+.gap-normal { gap: 1.5rem; }
+.gap-large { gap: 3rem; }
 
-.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; }
-.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-2 { gap: 2rem; }
+}
+
+@media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  h1 { font-size: 3rem; }
-  h2 { font-size: 2.5rem; }
   .section-padding { padding: var(--space-lg) 0; }
+  .container { padding: 0 1.5rem; }
+  h1 { font-size: 2.75rem; }
+  h2 { font-size: 2.25rem; }
+  .card-flat { padding: 2rem; }
 }
 
 /* UI Elements */
@@ -156,7 +192,7 @@ ul {
 .btn-outline {
   background-color: transparent;
   color: var(--text-primary);
-  border: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .btn-outline:hover {
@@ -203,19 +239,56 @@ ul {
   color: var(--primary-brand);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 1.5rem;
 }
 
 /* Backgrounds */
-.bg-primary-light { background-color: var(--primary-bg); }
-.bg-dark { background-color: var(--dark-bg); color: var(--text-light); }
-.bg-sand { background-color: var(--sand-bg); }
-.bg-accent { background-color: var(--secondary-accent); }
+.bg-primary-light {
+  background-color: var(--primary-bg);
+}
+
+.bg-dark {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6 {
+  color: var(--text-light);
+}
+
+.bg-sand {
+  background-color: var(--sand-bg);
+}
+
+.bg-accent {
+  background-color: var(--secondary-accent);
+  color: white;
+}
+
+.bg-accent h1,
+.bg-accent h2,
+.bg-accent h3,
+.bg-accent h4,
+.bg-accent h5,
+.bg-accent h6 {
+  color: white;
+}
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -239,9 +312,26 @@ ul {
 }
 
 /* Typography Helpers */
-.text-italic { font-style: italic; }
-.text-center { text-align: center; }
-.text-secondary { color: var(--text-secondary); }
-.text-primary-brand { color: var(--primary-brand); }
-.text-accent { color: var(--secondary-accent); }
-.font-bold { font-weight: 700; }
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-primary-brand {
+  color: var(--primary-brand);
+}
+
+.text-accent {
+  color: var(--secondary-accent);
+}
+
+.font-bold {
+  font-weight: 700;
+}

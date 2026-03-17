@@ -45,53 +45,53 @@ export default function EventsCampaigns() {
     >
       <div className="events-page">
         {/* Banner Section */}
-        <div className="card-flat bg-dark text-light mb-8" style={{ borderRadius: 'var(--radius-md)', padding: '4rem 3rem', display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '2rem', alignItems: 'center' }}>
+        <div className="card-flat bg-dark text-light mb-large grid-2 align-center">
             <div>
-                <span className="badge badge-accent">Join our Mission</span>
-                <h2 className="text-light mb-2">Be part of our next community event!</h2>
-                <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', marginBottom: '2rem' }}>
+                <span className="badge badge-accent mb-4">Join our Mission</span>
+                <h2 className="text-light mb-4">Be part of our next community event!</h2>
+                <p className="text-white opacity-70 mb-huge">
                     Ghatkopar Welfare Association organizes regular events and campaigns to address grassroots challenges and empower the community.
                 </p>
-                <button className="btn btn-primary" style={{ backgroundColor: 'var(--secondary-accent)', color: 'var(--text-primary)' }}>Register for Updates</button>
+                <Link to="/contact" className="btn btn-accent">Register for Updates</Link>
             </div>
             <div className="grid-2 gap-small">
-                <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', textAlign: 'center' }}>
-                    <Bell className="text-secondary-accent mb-1" style={{color: 'var(--secondary-accent)'}} />
-                    <span style={{display: 'block', fontSize: '1.2rem', fontWeight: 700}}>12+</span>
-                    <span style={{fontSize: '0.8rem'}}>Events/Year</span>
+                <div className="bg-white/5 p-8 rounded-xl text-center backdrop-blur-sm">
+                    <Bell className="text-accent mb-2 mx-auto" />
+                    <span className="block text-2xl font-bold">12+</span>
+                    <span className="text-xs opacity-70">Events/Year</span>
                 </div>
-                <div style={{ padding: '1.5rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', textAlign: 'center' }}>
-                    <Calendar className="text-secondary-accent mb-1" style={{color: 'var(--secondary-accent)'}} />
-                    <span style={{display: 'block', fontSize: '1.2rem', fontWeight: 700}}>Monthly</span>
-                    <span style={{fontSize: '0.8rem'}}>Campaigns</span>
+                <div className="bg-white/5 p-8 rounded-xl text-center backdrop-blur-sm">
+                    <Calendar className="text-accent mb-2 mx-auto" />
+                    <span className="block text-2xl font-bold">Monthly</span>
+                    <span className="text-xs opacity-70">Campaigns</span>
                 </div>
             </div>
         </div>
 
-        {/* Upcomming Events */}
-        <div className="mb-8">
-            <h3 className="mb-4">Upcoming Programmes</h3>
-            <div className="grid-2">
+        {/* Upcoming Events */}
+        <div className="mb-large">
+            <h3 className="section-title mb-6">Upcoming Programmes</h3>
+            <div className="grid-2 gap-normal">
                 {upcomingEvents.map((event, idx) => (
-                    <div key={idx} className="card-flat bg-sand" style={{ borderRadius: 'var(--radius-md)', padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-                        <div style={{ backgroundColor: 'var(--primary-brand)', padding: '1rem 2rem', color: '#fff', display: 'flex', justifyContent: 'space-between' }}>
-                            <span style={{ fontWeight: 600 }}>{event.category}</span>
+                    <div key={idx} className="card-flat bg-sand p-0 overflow-hidden flex flex-col border-subtle card-hover-up">
+                        <div className="bg-primary-brand p-4 px-8 text-white flex justify-between align-center">
+                            <span className="font-bold text-sm uppercase tracking-wider">{event.category}</span>
                             <Tag size={18} />
                         </div>
-                        <div style={{ padding: '2rem' }}>
-                            <h4 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>{event.title}</h4>
-                            <div className="mb-2" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                        <div className="p-8">
+                            <h4 className="mb-4">{event.title}</h4>
+                            <div className="flex align-center gap-small text-sm text-secondary mb-2">
                                 <Calendar size={16} className="text-primary-brand" />
                                 <span>{event.date} • {event.time}</span>
                             </div>
-                            <div className="mb-4" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+                            <div className="flex align-center gap-small text-sm text-secondary mb-6">
                                 <MapPin size={16} className="text-primary-brand" />
                                 <span>{event.location}</span>
                             </div>
-                            <p style={{ marginBottom: '1.5rem' }}>{event.desc}</p>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                <Link to="/contact" className="btn btn-outline" style={{ borderRadius: '50px', padding: '0.5rem 1.5rem', fontSize: '0.9rem' }}>Join Now</Link>
-                                <button style={{ background: 'none', border: 'none', color: 'var(--text-secondary)', cursor: 'pointer' }}><Share2 size={18}/></button>
+                            <p className="text-sm text-secondary mb-8 leading-relaxed">{event.desc}</p>
+                            <div className="flex justify-between align-center mt-auto pt-6 border-top">
+                                <Link to="/contact" className="btn btn-outline py-2 px-6 text-sm">Join Now</Link>
+                                <button className="btn-icon text-secondary hover-text-primary-brand transition-colors"><Share2 size={18}/></button>
                             </div>
                         </div>
                     </div>
@@ -100,20 +100,20 @@ export default function EventsCampaigns() {
         </div>
 
         {/* Campaign Categories */}
-        <div className="section-padding bg-primary-light" style={{ borderRadius: 'var(--radius-md)', padding: '4rem 2rem' }}>
-            <div className="text-center mb-8">
-                <h2>Our Campaign Focus</h2>
-                <p className="text-secondary" style={{ maxWidth: '600px', margin: '0 auto' }}>We organize targeted campaigns throughout the year to create measurable social impact.</p>
+        <div className="py-xl bg-primary-light rounded-xl px-12 mb-large">
+            <div className="text-center mb-large">
+                <h2 className="mb-2">Our Campaign Focus</h2>
+                <p className="text-secondary max-w-2xl mx-auto">We organize targeted campaigns throughout the year to create measurable social impact.</p>
             </div>
-            <div className="grid-2">
+            <div className="grid-2 gap-normal">
                 {categories.map((cat, idx) => (
-                    <div key={idx} className="bg-white" style={{ padding: '2rem', borderRadius: 'var(--radius-md)', display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}>
-                        <div className="bg-sand" style={{ padding: '1rem', borderRadius: '12px' }}>
+                    <div key={idx} className="bg-white p-8 rounded-xl flex gap-normal align-start shadow-sm hover-shadow-lg transition-all border-subtle">
+                        <div className="bg-sand p-4 rounded-xl">
                             <Bell className="text-primary-brand" />
                         </div>
                         <div>
-                            <h4 style={{ marginBottom: '0.5rem' }}>{cat.name}</h4>
-                            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)' }}>{cat.desc}</p>
+                            <h4 className="mb-2">{cat.name}</h4>
+                            <p className="text-sm text-secondary m-0 leading-relaxed">{cat.desc}</p>
                         </div>
                     </div>
                 ))}
@@ -121,25 +121,24 @@ export default function EventsCampaigns() {
         </div>
 
         {/* Past Events & Social Media Highlights */}
-        <div className="section-padding" style={{ borderRadius: 'var(--radius-md)', padding: '4rem 0' }}>
-            <div className="text-center mb-8">
-                <span className="badge">Social Feed</span>
-                <h2>Past Events & <span className="text-primary-brand">Highlights</span></h2>
-                <p className="text-secondary" style={{ maxWidth: '600px', margin: '0 auto' }}>Follow our journey and stay updated with our latest activities through our Instagram feed.</p>
+        <div className="py-xl rounded-xl">
+            <div className="text-center mb-large">
+                <span className="badge mb-4">Social Feed</span>
+                <h2 className="mb-2">Past Events & <span className="text-primary-brand">Highlights</span></h2>
+                <p className="text-secondary max-w-2xl mx-auto">Follow our journey and stay updated with our latest activities through our Instagram feed.</p>
             </div>
             
-            <div className="instagram-feed-container card-flat bg-white" style={{ padding: '2rem', borderRadius: 'var(--radius-md)', minHeight: '400px' }}>
-                {/* Elfsight Instagram Feed */}
+            <div className="instagram-feed-container card-flat bg-white p-8 border-subtle min-h-96">
                 <div className="elfsight-app-287c5ce5-772b-447a-9fd5-f54417312fa6" data-elfsight-app-lazy></div>
             </div>
         </div>
 
         {/* CTA */}
-        <div className="mt-8 text-center bg-accent" style={{ padding: '4rem 2rem', borderRadius: 'var(--radius-md)' }}>
-            <h2 className="mb-2">Get Updates on Future Campaigns</h2>
-            <p className="mb-4" style={{ maxWidth: '500px', margin: '0 auto 2rem' }}>Subscribe to our newsletter to receive timely announcements about new initiatives and event recaps.</p>
-            <form style={{ display: 'flex', gap: '1rem', justifyContent: 'center', maxWidth: '500px', margin: '0 auto' }}>
-                <input type="email" placeholder="Your Email Address" style={{ padding: '1rem 1.5rem', borderRadius: '50px', border: '1px solid rgba(0,0,0,0.1)', flexGrow: 1 }} />
+        <div className="mt-large text-center bg-accent py-xl px-8 rounded-xl">
+            <h2 className="mb-4">Get Updates on Future Campaigns</h2>
+            <p className="mb-8 max-w-lg mx-auto opacity-90">Subscribe to our newsletter to receive timely announcements about new initiatives and event recaps.</p>
+            <form className="flex flex-center gap-small max-w-lg mx-auto">
+                <input type="email" placeholder="Your Email Address" className="flex-grow py-3 px-6 rounded-full border-subtle outline-none focus:border-primary-brand transition-all" />
                 <button type="button" className="btn btn-primary">Subscribe</button>
             </form>
         </div>

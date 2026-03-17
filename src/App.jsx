@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/common/ScrollToTop';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -40,6 +41,7 @@ import MemberVerification from './pages/GetInvolved/MemberVerification';
 
 // Media & Events
 import Gallery from './pages/MediaEvents/Gallery';
+import Media from './pages/MediaEvents/Media';
 import Donation from './pages/Donation/Donation';
 
 // Resources & Directory
@@ -52,6 +54,7 @@ function App() {
   console.log('App: Rendering Routes');
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="app-container">
         <Header />
         <main className="main-content">
@@ -65,8 +68,8 @@ function App() {
             <Route path="/about/who-we-are" element={<WhoWeAre />} />
             <Route path="/about/goals" element={<GoalsBeliefs />} />
             <Route path="/about/history" element={<History />} />
-            <Route path="/about/founder-director" element={<Founder />} />
-            <Route path="/about/chairman-president" element={<ChairmanPresident />} />
+            <Route path="/about/founder-president" element={<Founder />} />
+            <Route path="/about/chairman-director" element={<ChairmanPresident />} />
             <Route path="/about/board" element={<BoardMembers />} />
             <Route path="/about/organisation-flow" element={<OrganisationFlow />} />
             <Route path="/about/values" element={<ValuesObjectives />} />
@@ -92,6 +95,7 @@ function App() {
             
             <Route path="/media-events/gallery" element={<Gallery />} />
             <Route path="/media-events/events" element={<EventsCampaigns />} />
+            <Route path="/media-events/media" element={<Media />} />
 
             {/* Resources and Directory Routes */}
             <Route path="/directory" element={<Directory />} />
