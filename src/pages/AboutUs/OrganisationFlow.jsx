@@ -1,82 +1,51 @@
 import React from 'react';
 import PageLayout from '/src/components/layout/PageLayout.jsx';
-import { GitBranch, Users, Shield, Target, ArrowDown } from 'lucide-react';
+import { GitBranch, Users, ShieldCheck, UserCheck } from 'lucide-react';
+import './About.css';
 
 export default function OrganisationFlow() {
-  const steps = [
-    {
-      title: "Management Board",
-      desc: "Strategic leadership, vision alignment, and overall governance of the Association.",
-      icon: <Shield className="text-primary-brand" size={24} />
-    },
-    {
-      title: "Executive Committee",
-      desc: "Planning, decision-making, regulatory compliance, and programme oversight.",
-      icon: <Target className="text-primary-brand" size={24} />
-    },
-    {
-      title: "Programme Divisions",
-      desc: "Dedicated teams managing specific welfare areas like Healthcare, Food Security, and Education.",
-      icon: <GitBranch className="text-primary-brand" size={24} />
-    },
-    {
-      title: "Volunteer Network",
-      desc: "Community-level execution, outreach programmes, and grassroots implementation.",
-      icon: <Users className="text-primary-brand" size={24} />
-    }
-  ];
-
-  const divisions = [
-    "Food & Welfare", "Healthcare & Awareness", "Education & Empowerment", "Civic & Community Growth"
+  const levels = [
+    { title: 'Executive Oversight', icon: <ShieldCheck size={24} />, desc: 'Founder & Chairman leading the strategic vision and legal compliance.' },
+    { title: 'Managing Board', icon: <UserCheck size={24} />, desc: 'Executive directors managing day-to-day operations and project approvals.' },
+    { title: 'Project Divisions', icon: <GitBranch size={24} />, desc: 'Specialized teams for Food, Health, Education, and Civic issues.' },
+    { title: 'Volunteer Force', icon: <Users size={24} />, desc: 'The backbone of GWA, executing field activities and community outreach.' }
   ];
 
   return (
-    <PageLayout title="Organization Flow" subtitle="The structured framework of GWA governance.">
+    <PageLayout title="Organisation Flow" subtitle="Understanding our structured approach to social welfare.">
       <div className="about-page">
-        <div className="card-flat bg-primary-bg p-8 mb-12 border-primary border-dashed">
-          <h3 className="text-center mb-8">Governance Structure</h3>
-          <div className="flow-container max-w-2xl mx-auto">
-            {steps.map((step, idx) => (
-              <React.Fragment key={idx}>
-                <div className="card-flat bg-white p-6 shadow-sm border-subtle flex align-center gap-normal hover-shadow-lg transition-all">
-                  <div className="bg-sand p-4 rounded-xl">
-                    {step.icon}
-                  </div>
-                  <div>
-                    <h4 className="m-0 text-primary-dark">{step.title}</h4>
-                    <p className="m-0 text-xs text-secondary mt-1">{step.desc}</p>
-                  </div>
-                </div>
-                {idx < steps.length - 1 && (
-                  <div className="flex justify-center py-4">
-                    <ArrowDown size={24} className="text-primary-brand opacity-30" />
-                  </div>
-                )}
-              </React.Fragment>
-            ))}
-          </div>
+        <div className="text-center mb-12">
+            <p className="text-secondary max-w-2xl mx-auto">
+                Our organization operates through a decentralized yet accountable structure, ensuring that every initiative is executed with precision and impact.
+            </p>
         </div>
 
-        <div className="grid-2 gap-large align-center">
-          <div>
-            <h3 className="mb-4">Programme Divisions</h3>
-            <p className="text-secondary mb-6 leading-relaxed">
-              Our organisation operates through specialized divisions to ensure that every social initiative is managed with expert focus and dedicated resources.
-            </p>
-            <div className="flex flex-wrap gap-normal">
-              {divisions.map((div, i) => (
-                <div key={i} className="bg-white border-subtle px-4 py-2 rounded-lg font-bold text-sm text-primary-brand shadow-sm">
-                  {div}
+        <div className="max-w-4xl mx-auto">
+            {levels.map((level, idx) => (
+                <div key={idx} className="flex align-center gap-large mb-4">
+                    <div className="hidden md:flex flex-col align-center">
+                        <div className="w-12 h-12 rounded-full bg-primary-brand text-white flex align-center justify-center font-bold">
+                            {idx + 1}
+                        </div>
+                        {idx !== levels.length - 1 && <div className="w-0.5 h-16 bg-primary-bg my-2"></div>}
+                    </div>
+                    <div className="card-flat flex-grow p-6 flex align-center gap-6 card-hover-up">
+                        <div className="bg-sand p-4 rounded-xl text-primary-brand">
+                            {level.icon}
+                        </div>
+                        <div>
+                            <h4 className="mb-1">{level.title}</h4>
+                            <p className="text-sm text-secondary m-0">{level.desc}</p>
+                        </div>
+                    </div>
                 </div>
-              ))}
-            </div>
-          </div>
-          <div className="bg-sand p-8 rounded-2xl">
-            <h4 className="mb-4">Operational Philosophy</h4>
-            <p className="text-xs text-secondary italic mb-0">
-              "We believe in a Decentralized Implementation model where the Management Board provides the vision, and Programme Divisions have the autonomy to execute community-specific solutions under professional oversight."
+            ))}
+        </div>
+
+        <div className="mt-12 p-8 bg-sand border-dashed rounded-xl text-center">
+            <p className="m-0 text-secondary font-medium">
+                GWA follows a <span className="text-primary-brand font-bold">Bottom-Up approach</span> where feedback from volunteers and beneficiaries informs our top-level strategic decisions.
             </p>
-          </div>
         </div>
       </div>
     </PageLayout>

@@ -27,22 +27,20 @@ export default function LocalInformation() {
       subtitle="Your guide to essential community services and resources in Ghatkopar."
     >
       <div className="resources-page">
-        <div className="text-center mb-large">
-            <p className="text-secondary max-w-3xl mx-auto">
-                At Ghatkopar Welfare Association, we aim to keep residents informed about the essential public services and utilities available in our community. Below is a comprehensive list of resources to help you stay connected with local facilities.
-            </p>
-        </div>
+        <p className="mb-8 text-secondary max-w-3xl">
+          At Ghatkopar Welfare Association, we aim to keep residents informed about the essential public services and utilities available in our community. Below is a comprehensive list of resources to help you stay connected with local facilities.
+        </p>
 
-        <div className="grid-3 mb-huge">
+        <div className="grid-3 mb-12">
           {categories.map((cat, idx) => (
-            <div key={idx} className="card-flat bg-sand card-hover-up info-card p-8 flex flex-col align-center text-center">
+            <div key={idx} className="card-flat bg-sand card-hover-up info-card">
               <div className="icon-box-white mb-6">
                 {React.cloneElement(cat.icon, { className: 'text-primary-brand' })}
               </div>
-              <h3 className="mb-2 text-lg font-bold">{cat.title}</h3>
-              <p className="text-secondary text-sm mb-6 flex-grow">{cat.desc}</p>
-              <button className="flex align-center gap-tiny text-primary-brand font-bold text-sm bg-none border-none p-0 cursor-pointer hover-accent transition-all group">
-                View Details <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              <h3 className="mb-2 text-lg">{cat.title}</h3>
+              <p className="text-secondary text-sm mb-6">{cat.desc}</p>
+              <button className="flex align-center gap-tiny text-primary-brand font-bold text-sm bg-none border-none p-0 cursor-pointer hover-accent">
+                View Information <ArrowRight size={14} />
               </button>
             </div>
           ))}
@@ -54,18 +52,14 @@ export default function LocalInformation() {
           <p className="mb-8 opacity-70 max-w-2xl mx-auto">
             If you are looking for specific contact details or help navigating these local services, feel free to visit our office or reach out to our team.
           </p>
-          <div className="flex flex-center flex-wrap gap-large">
+          <div className="flex flex-wrap justify-center gap-8">
             <div className="flex align-center gap-small">
-              <div className="bg-white/10 p-3 rounded-full">
-                <Phone className="text-accent" size={20} />
-              </div>
-              <span className="font-bold text-lg">+91 73737 30803</span>
+              <Phone className="text-accent" />
+              <span className="font-bold">+91 73737 30803</span>
             </div>
             <div className="flex align-center gap-small">
-              <div className="bg-white/10 p-3 rounded-full">
-                <Mail className="text-accent" size={20} />
-              </div>
-              <span className="font-bold text-lg">info@ghatkoparassociation.org</span>
+              <Mail className="text-accent" />
+              <span className="font-bold">info@ghatkoparassociation.org</span>
             </div>
           </div>
         </div>
