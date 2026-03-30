@@ -33,20 +33,20 @@ export default function Education() {
           ))}
         </div>
 
-        <div className="impact-box bg-dark">
+        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
           <h2 className="text-white">Knowledge for All</h2>
           <div className="impact-stats">
             <div className="impact-stat">
-              <span className="impact-number">2,000+</span>
-              <span className="impact-label">Students Assisted</span>
+              <span className="impact-number" style={{ color: 'white' }}>2,000+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Students Assisted</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">10+</span>
-              <span className="impact-label">Local Schools Partnered</span>
+              <span className="impact-number" style={{ color: 'white' }}>10+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Local Schools Partnered</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">85%</span>
-              <span className="impact-label">Result Improvement</span>
+              <span className="impact-number" style={{ color: 'white' }}>85%</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Result Improvement</span>
             </div>
           </div>
         </div>

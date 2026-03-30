@@ -27,7 +27,7 @@ export default function Overview() {
           <div className="grid-2 gap-small">
             {highlights.map((item, idx) => (
               <div key={idx} className="stat-item card-hover-up">
-                <div className="text-primary-brand mb-2">{item.icon}</div>
+                <div className="text-primary-brand">{item.icon}</div>
                 <h4>{item.value}</h4>
                 <span>{item.label}</span>
               </div>
@@ -38,17 +38,17 @@ export default function Overview() {
         <div className="section-padding bg-sand rounded-xl p-12 mb-12">
           <div className="grid-3 gap-large">
             <div className="text-center">
-              <Users size={40} className="text-primary-brand mb-4 mx-auto" />
+              <Users size={40} className="text-primary-brand mx-auto" />
               <h4 className="mb-2">Community Led</h4>
               <p className="text-sm text-secondary">Driven by thousands of local residents, volunteers, and professionals working collectively.</p>
             </div>
             <div className="text-center">
-              <Target size={40} className="text-primary-brand mb-4 mx-auto" />
+              <Target size={40} className="text-primary-brand mx-auto" />
               <h4 className="mb-2">Impact Driven</h4>
               <p className="text-sm text-secondary">Programmes aimed at measurable goals: feeding 1000s weekly and providing specialty healthcare.</p>
             </div>
             <div className="text-center">
-              <Shield size={40} className="text-primary-brand mb-4 mx-auto" />
+              <Shield size={40} className="text-primary-brand mx-auto" />
               <h4 className="mb-2">Fully Transparent</h4>
               <p className="text-sm text-secondary">Every rupee donated is accounted for and utilized exclusively for social welfare initiatives.</p>
             </div>

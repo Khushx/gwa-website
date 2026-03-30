@@ -68,8 +68,8 @@ function App() {
             <Route path="/about/who-we-are" element={<WhoWeAre />} />
             <Route path="/about/goals" element={<GoalsBeliefs />} />
             <Route path="/about/history" element={<History />} />
-            <Route path="/about/founder-director" element={<Founder />} />
-            <Route path="/about/chairman-president" element={<ChairmanPresident />} />
+            <Route path="/about/founder-president" element={<Founder />} />
+            <Route path="/about/chairman-director" element={<ChairmanPresident />} />
             <Route path="/about/board" element={<BoardMembers />} />
             <Route path="/about/organisation-flow" element={<OrganisationFlow />} />
             <Route path="/about/values" element={<ValuesObjectives />} />

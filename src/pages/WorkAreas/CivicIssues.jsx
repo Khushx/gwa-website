@@ -33,20 +33,20 @@ export default function CivicIssues() {
           ))}
         </div>
 
-        <div className="impact-box bg-dark">
+        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
           <h2 className="text-white">Active Citizenship</h2>
           <div className="impact-stats">
             <div className="impact-stat">
-              <span className="impact-number">500+</span>
-              <span className="impact-label">Grievances Solved</span>
+              <span className="impact-number" style={{ color: 'white' }}>500+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Grievances Solved</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">50+</span>
-              <span className="impact-label">Ward Meetings</span>
+              <span className="impact-number" style={{ color: 'white' }}>50+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Ward Meetings</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">100%</span>
-              <span className="impact-label">Lawful Advocacy</span>
+              <span className="impact-number" style={{ color: 'white' }}>100%</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Lawful Advocacy</span>
             </div>
           </div>
         </div>

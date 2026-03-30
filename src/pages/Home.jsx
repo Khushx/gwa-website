@@ -19,7 +19,7 @@ export default function Home() {
       <section className="hero-section bg-primary-light">
         <div className="container hero-container">
           <div className="hero-content animate-fade-in">
-            <span className="badge">Welcome to GWA</span>
+            <span className="badge">Welcome to Ghatkopar Welfare Association</span>
             <h1 className="hero-title">
               Be the Change You <br />
               <span className="text-primary-brand italic">Want to See</span> in Ghatkopar<span className="text-accent">.</span>
@@ -34,9 +34,9 @@ export default function Home() {
 
             <div className="hero-trust mt-4 flex align-center gap-small">
               <div className="trust-portraits">
-                <div className="portrait-circle">2k+</div>
+                <div className="portrait-circle">200+</div>
               </div>
-              <p className="m-0 text-secondary">Join over <span className="font-bold">2000+</span> active members & supporters</p>
+              <p className="m-0 text-secondary">Join over <span className="font-bold">200+</span> active members & supporters</p>
             </div>
           </div>
           <div className="hero-media">
@@ -44,7 +44,7 @@ export default function Home() {
               <img src={foodDistImage1} alt="GWA Community Support" className="hero-main-img" />
               <div className="hero-accent-box bg-accent">
                 <div className="impact-number font-bold">10k+</div>
-                <div className="impact-text">Lives Transform</div>
+                <div className="impact-text">Lives Transformed</div>
               </div>
             </div>
           </div>

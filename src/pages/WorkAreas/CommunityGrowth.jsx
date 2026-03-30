@@ -33,20 +33,20 @@ export default function CommunityGrowth() {
           ))}
         </div>
 
-        <div className="impact-box bg-dark">
+        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
           <h2 className="text-white">Our Shared Progress</h2>
           <div className="impact-stats">
             <div className="impact-stat">
-              <span className="impact-number">5,000+</span>
-              <span className="impact-label">Engaged Residents</span>
+              <span className="impact-number" style={{ color: 'white' }}>5,000+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Engaged Residents</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">100+</span>
-              <span className="impact-label">Community Events</span>
+              <span className="impact-number" style={{ color: 'white' }}>100+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Community Events</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">1</span>
-              <span className="impact-label">Common Vision</span>
+              <span className="impact-number" style={{ color: 'white' }}>1</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Common Vision</span>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function CommunityGrowth() {
               <p className="text-secondary">Official members get voting rights and a direct voice in our strategic decision-making process.</p>
             </div>
             <div className="flex gap-small justify-end">
-              <Link to="/get-involved/member-registration" className="btn btn-primary">Register Now <ArrowRight size={16} className="ml-2" /></Link>
+              <Link to="/get-involved/volunteer" className="btn btn-primary">Register Now <ArrowRight size={16} className="ml-2" /></Link>
             </div>
           </div>
         </div>

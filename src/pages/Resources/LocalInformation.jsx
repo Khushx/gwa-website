@@ -22,12 +22,12 @@ export default function LocalInformation() {
   ];
 
   return (
-    <PageLayout 
-      title="Local Information" 
+    <PageLayout
+      title="Local Information"
       subtitle="Your guide to essential community services and resources in Ghatkopar."
     >
       <div className="resources-page">
-        <p className="mb-8 text-secondary max-w-3xl">
+        <p className="mb-8 text-secondary max-w-3xl text-center mx-auto" style={{ 'marginBottom': '60px' }}>
           At Ghatkopar Welfare Association, we aim to keep residents informed about the essential public services and utilities available in our community. Below is a comprehensive list of resources to help you stay connected with local facilities.
         </p>
 
@@ -39,7 +39,7 @@ export default function LocalInformation() {
               </div>
               <h3 className="mb-2 text-lg">{cat.title}</h3>
               <p className="text-secondary text-sm mb-6">{cat.desc}</p>
-              <button className="flex align-center gap-tiny text-primary-brand font-bold text-sm bg-none border-none p-0 cursor-pointer hover-accent">
+              <button className="flex align-center gap-tiny text-primary-brand font-bold text-sm bg-none border-none p-0 cursor-pointer hover-accent" style={{ padding: '10px', borderRadius: '20px', border: '1px solid var(--primary-brand)' }}>
                 View Information <ArrowRight size={14} />
               </button>
             </div>
@@ -52,13 +52,13 @@ export default function LocalInformation() {
           <p className="mb-8 opacity-70 max-w-2xl mx-auto">
             If you are looking for specific contact details or help navigating these local services, feel free to visit our office or reach out to our team.
           </p>
-          <div className="flex flex-wrap justify-center gap-8">
-            <div className="flex align-center gap-small">
-              <Phone className="text-accent" />
+          <div className="contact-row">
+            <div className="contact-item">
+              <Phone className="text-accent flex-shrink-0" />
               <span className="font-bold">+91 73737 30803</span>
             </div>
-            <div className="flex align-center gap-small">
-              <Mail className="text-accent" />
+            <div className="contact-item">
+              <Mail className="text-accent flex-shrink-0" />
               <span className="font-bold">info@ghatkoparassociation.org</span>
             </div>
           </div>

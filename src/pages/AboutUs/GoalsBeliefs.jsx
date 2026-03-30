@@ -77,7 +77,7 @@ export default function GoalsBeliefs() {
                 </div>
 
                 <div className="p-12 bg-dark text-white rounded-xl text-center">
-                    <Shield size={40} className="text-accent mb-4 mx-auto" />
+                    <Shield size={40} className="text-accent mx-auto" />
                     <h3 className="text-white mb-2">Our Promise</h3>
                     <p className="opacity-70 max-w-2xl mx-auto">
                         "We don't just set goals; we set standards. Standards of service, standards of integrity, and standards of compassion that define everything we do."

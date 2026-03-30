@@ -58,7 +58,7 @@ export default function Environment() {
               <p className="text-secondary">Join our environmental workshops to learn about composting and water conservation for your building.</p>
             </div>
             <div className="flex gap-small justify-end">
-              <Link to="/contact" className="btn btn-primary">Contact Our Eco-Team <ArrowRight size={16} className="ml-2" /></Link>
+              <Link to="/get-involved/volunteer" className="btn btn-primary">Contact Our Eco-Team <ArrowRight size={16} className="ml-2" /></Link>
             </div>
           </div>
         </div>

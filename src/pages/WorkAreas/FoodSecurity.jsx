@@ -45,21 +45,21 @@ export default function FoodSecurity() {
           ))}
         </div>
 
-        <div className="impact-box">
+        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
           <span className="badge badge-accent mb-4">Our Track Record</span>
           <h2 className="text-white">Feeding Thousands Weekly</h2>
           <div className="impact-stats">
             <div className="impact-stat">
-              <span className="impact-number">10,000+</span>
-              <span className="impact-label">Meals Served</span>
+              <span className="impact-number" style={{ color: 'white' }}>10,000+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Meals Served</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">500+</span>
-              <span className="impact-label">Weekly Volunteers</span>
+              <span className="impact-number" style={{ color: 'white' }}>500+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Weekly Volunteers</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">24/7</span>
-              <span className="impact-label">Emergency Support</span>
+              <span className="impact-number" style={{ color: 'white' }}>24/7</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Emergency Support</span>
             </div>
           </div>
         </div>

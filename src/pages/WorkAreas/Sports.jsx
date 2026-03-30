@@ -33,23 +33,23 @@ export default function Sports() {
           ))}
         </div>
 
-        <div className="impact-box" style={{ background: 'var(--accent)' }}>
-            <h2 className="text-dark">Active Lifestyle Impact</h2>
-            <div className="impact-stats">
-              <div className="impact-stat">
-                <span className="impact-number" style={{ color: 'var(--text-primary)' }}>1,000+</span>
-                <span className="impact-label" style={{ color: 'var(--text-secondary)' }}>Young Athletes</span>
-              </div>
-              <div className="impact-stat">
-                <span className="impact-number" style={{ color: 'var(--text-primary)' }}>50+</span>
-                <span className="impact-label" style={{ color: 'var(--text-secondary)' }}>Tournaments Held</span>
-              </div>
-              <div className="impact-stat">
-                <span className="impact-number" style={{ color: 'var(--text-primary)' }}>5+</span>
-                <span className="impact-label" style={{ color: 'var(--text-secondary)' }}>Sports Clubs</span>
-              </div>
+        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
+          <h2 className="text-white">Active Lifestyle Impact</h2>
+          <div className="impact-stats">
+            <div className="impact-stat">
+              <span className="impact-number" style={{ color: 'white' }}>1,000+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Young Athletes</span>
+            </div>
+            <div className="impact-stat">
+              <span className="impact-number" style={{ color: 'white' }}>50+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Tournaments Held</span>
+            </div>
+            <div className="impact-stat">
+              <span className="impact-number" style={{ color: 'white' }}>5+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Sports Clubs</span>
             </div>
           </div>
+        </div>
 
         <div className="work-cta">
           <div className="grid-2 align-center gap-large">

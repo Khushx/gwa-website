@@ -40,8 +40,8 @@ export default function Healthcare() {
           {initiatives.map((item, idx) => (
             <div key={idx} className="initiative-card" style={{ borderTopColor: 'var(--accent)' }}>
               <div className="flex align-center gap-small mb-4">
-                  <div className="bg-sand p-2 rounded-lg"><Activity size={18} className="text-accent" /></div>
-                  <h4 className="m-0">{item.title}</h4>
+                <div className="bg-sand p-2 rounded-lg"><Activity size={18} className="text-accent" /></div>
+                <h4 className="m-0">{item.title}</h4>
               </div>
               <p className="text-secondary text-sm m-0">{item.desc}</p>
             </div>
@@ -69,11 +69,11 @@ export default function Healthcare() {
         <div className="work-cta">
           <div className="grid-2 align-center gap-large">
             <div>
-                <h2>Are You a Health Professional?</h2>
-                <p className="text-secondary">We are always looking for medical experts, nurses, and technicians to volunteer their skills at our camps.</p>
+              <h2>Are You a Health Professional?</h2>
+              <p className="text-secondary">We are always looking for medical experts, nurses, and technicians to volunteer their skills at our camps.</p>
             </div>
             <div className="flex gap-small justify-end">
-                <Link to="/contact" className="btn btn-primary">Partner with Us <UserPlus size={16} className="ml-2" /></Link>
+              <Link to="/get-involved/partner" className="btn btn-primary">Partner with Us <UserPlus size={16} className="ml-2" /></Link>
             </div>
           </div>
         </div>

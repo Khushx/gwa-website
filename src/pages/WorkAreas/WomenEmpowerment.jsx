@@ -33,20 +33,20 @@ export default function WomenEmpowerment() {
           ))}
         </div>
 
-        <div className="impact-box" style={{ background: 'var(--primary-bg)', color: 'var(--text-primary)' }}>
-          <h2 className="text-dark">Impact on Lives</h2>
+        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
+          <h2 className="text-white">Impact on Lives</h2>
           <div className="impact-stats">
             <div className="impact-stat">
-              <span className="impact-number" style={{ color: 'var(--primary-brand)' }}>1,200+</span>
-              <span className="impact-label">Women Trained</span>
+              <span className="impact-number" style={{ color: 'white' }}>1,200+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Women Trained</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number" style={{ color: 'var(--primary-brand)' }}>15+</span>
-              <span className="impact-label">Active Self-Help Groups</span>
+              <span className="impact-number" style={{ color: 'white' }}>15+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Active Self-Help Groups</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number" style={{ color: 'var(--primary-brand)' }}>500+</span>
-              <span className="impact-label">Livelihoods Created</span>
+              <span className="impact-number" style={{ color: 'white' }}>500+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Livelihoods Created</span>
             </div>
           </div>
         </div>

@@ -27,29 +27,29 @@ export default function Livelihood() {
         <div className="initiative-grid">
           {initiatives.map((item, idx) => (
             <div key={idx} className="initiative-card">
-                <div className="flex align-center gap-small mb-4">
-                  <div className="bg-sand p-2 rounded-lg text-primary-brand"><TrendingUp size={18} /></div>
-                  <h4 className="m-0">{item.title}</h4>
-                </div>
+              <div className="flex align-center gap-small mb-4">
+                <div className="bg-sand p-2 rounded-lg text-primary-brand"><TrendingUp size={18} /></div>
+                <h4 className="m-0">{item.title}</h4>
+              </div>
               <p className="text-secondary text-sm m-0">{item.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="impact-box" style={{ background: 'var(--dark)' }}>
+        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
           <h2 className="text-white">Sustainable Livelihoods</h2>
           <div className="impact-stats">
             <div className="impact-stat">
-              <span className="impact-number">800+</span>
-              <span className="impact-label">Jobs Secured</span>
+              <span className="impact-number" style={{ color: 'white' }}>800+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Jobs Secured</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">15+</span>
-              <span className="impact-label">Skill Centers</span>
+              <span className="impact-number" style={{ color: 'white' }}>15+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Skill Centers</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">65%</span>
-              <span className="impact-label">Income Boost</span>
+              <span className="impact-number" style={{ color: 'white' }}>65%</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Income Boost</span>
             </div>
           </div>
         </div>

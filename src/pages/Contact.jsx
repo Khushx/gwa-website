@@ -30,8 +30,8 @@ export default function Contact() {
   ];
 
   return (
-    <PageLayout 
-      title="Contact Us" 
+    <PageLayout
+      title="Contact Us"
       subtitle="Have questions or want to collaborate? We'd love to hear from you."
     >
       <div className="contact-page">
@@ -60,7 +60,7 @@ export default function Contact() {
               <Mail className="text-primary-brand" size={28} />
             </div>
             <h4>Email Us</h4>
-            <p className="text-sm text-secondary">info@ghatkoparassociation.org</p>
+            <p className="text-sm text-secondary">ghatkoparassociation@gmail.com info@ghatkoparassociation.org</p>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ export default function Contact() {
               <h2>Send us a <span className="text-primary-brand">Message</span></h2>
               <p className="text-secondary">Our team typically responds within 24-48 hours.</p>
             </div>
-            
+
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="grid-2 gap-small mb-4">
                 <div className="form-group">
@@ -84,7 +84,7 @@ export default function Contact() {
                   <input type="email" className="form-control" placeholder="name@example.com" required />
                 </div>
               </div>
-              
+
               <div className="form-group mb-4">
                 <label className="font-bold mb-2 block">Subject</label>
                 <select className="form-control" required>
@@ -126,13 +126,13 @@ export default function Contact() {
             <p className="text-secondary">Visit our headquarters at Ghatkopar West.</p>
           </div>
           <div className="card-flat overflow-hidden p-0 rounded-xl shadow-md" style={{ height: '500px' }}>
-            <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.662095650125!2d72.90695031490135!3d19.083437987084534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c630aa925dbd%3A0xe67868516ee7!2sGhatkopar%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647432000000!5m2!1sen!2sin" 
-               width="100%" 
-               height="100%" 
-               style={{ border: 0 }} 
-               allowFullScreen="" 
-               loading="lazy"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.662095650125!2d72.90695031490135!3d19.083437987084534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c630aa925dbd%3A0xe67868516ee7!2sGhatkopar%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647432000000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
             ></iframe>
           </div>
         </div>

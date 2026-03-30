@@ -33,20 +33,20 @@ export default function Digital() {
           ))}
         </div>
 
-        <div className="impact-box bg-dark">
+        <div className="impact-box" style={{ background: 'var(--primary-brand)' }}>
           <h2 className="text-white">Connecting Ghatkopar</h2>
           <div className="impact-stats">
             <div className="impact-stat">
-              <span className="impact-number">1,500+</span>
-              <span className="impact-label">Digitally Literate</span>
+              <span className="impact-number" style={{ color: 'white' }}>1,500+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Digitally Literate</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">5+</span>
-              <span className="impact-label">Computer Labs</span>
+              <span className="impact-number" style={{ color: 'white' }}>5+</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Computer Labs</span>
             </div>
             <div className="impact-stat">
-              <span className="impact-number">24/7</span>
-              <span className="impact-label">Support Access</span>
+              <span className="impact-number" style={{ color: 'white' }}>24/7</span>
+              <span className="impact-label" style={{ color: 'rgba(255,255,255,0.7)' }}>Support Access</span>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ export default function Digital() {
               <p className="text-secondary">If you have old but working digital devices, donate them to our community centers for student use.</p>
             </div>
             <div className="flex gap-small justify-end">
-              <Link to="/contact" className="btn btn-primary">Donate Devices <ArrowRight size={16} className="ml-2" /></Link>
+              <Link to="/donate" className="btn btn-primary">Donate Devices <ArrowRight size={16} className="ml-2" /></Link>
             </div>
           </div>
         </div>

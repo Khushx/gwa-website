@@ -33,9 +33,9 @@ export default function History() {
   return (
     <PageLayout title="History" subtitle="How a small initiative became a community movement.">
       <div className="about-page max-w-4xl mx-auto">
-        <div className="flex align-center gap-small mb-8">
+        <div className="flex align-center gap-small mb-4">
           <HistoryIcon size={32} className="text-primary-brand" />
-          <h2 className="m-0">Our Journey</h2>
+          <h2 className="m-0 mb-2">Our Journey</h2>
         </div>
 
         <div className="relative pl-8 border-left border-primary-bg ml-4 mt-8">
@@ -51,9 +51,6 @@ export default function History() {
               </div>
             </div>
           ))}
-          <div className="absolute -left-11 -bottom-4 bg-accent w-6 h-6 rounded-full flex align-center justify-center">
-            <Flag size={12} className="text-white" />
-          </div>
         </div>
       </div>
     </PageLayout>

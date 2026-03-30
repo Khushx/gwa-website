@@ -21,7 +21,7 @@ export default function ValuesObjectives() {
   return (
     <PageLayout title="Values & Objectives" subtitle="The ethical compass that guides our every decision.">
       <div className="about-page">
-        <h2 className="section-title mb-8">Our Core Values</h2>
+        <h2 className="section-title mb-8" style={{ marginBottom: '40px' }}>Our Core Values</h2>
         <div className="grid-4 mb-12">
           {values.map((v, i) => (
             <div key={i} className="card-flat p-6 text-center card-hover-up">
@@ -47,7 +47,7 @@ export default function ValuesObjectives() {
               {objectives.map((obj, i) => (
                 <div key={i} className="flex items-start gap-2 mb-4">
                   <div className="mt-1"><CheckSquare size={18} className="text-accent" /></div>
-                  <span className="text-secondary font-medium">{obj}</span>
+                  <span className="text-secondary font-medium" style={{ marginLeft: '10px' }}>{obj}</span>
                 </div>
               ))}
             </div>
