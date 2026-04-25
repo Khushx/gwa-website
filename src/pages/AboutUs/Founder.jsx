@@ -12,18 +12,18 @@ export default function Founder() {
         <div className="profile-card">
           <div className="profile-img-wrapper shadow-lg">
             <img
-              src="/images/President.jpeg"
-              alt="Shabaaz Shaikh - Founder & President"
+              src="/images/Director.png"
+              alt="Rizwan Khan - Founder & President"
             />
           </div>
           <div className="profile-details">
             <span className="badge badge-primary mb-4">Founder & President</span>
-            <h2 className="mb-2">Shabaaz Shaikh</h2>
+            <h2 className="mb-2">Rizwan Khan</h2>
             <p className="text-primary-brand font-bold mb-6">Ghatkopar Welfare Association</p>
 
             <div className="text-secondary">
               <p className="mb-4">
-                <strong>Shabaaz Shaikh</strong> is the Founder and President of Ghatkopar Welfare Association (GWA) and the driving force behind the organisation’s vision of structured community development and social responsibility in Ghatkopar and surrounding areas of Mumbai.
+                <strong>Rizwan Khan</strong> is the Founder and President of Ghatkopar Welfare Association (GWA) and the driving force behind the organisation’s vision of structured community development and social responsibility in Ghatkopar and surrounding areas of Mumbai.
               </p>
               <p className="mb-4">
                 With a strong commitment to community welfare, he established the organisation to create a transparent and organised platform for social initiatives that address local challenges such as food security, healthcare awareness, education support, and civic engagement.
@@ -35,7 +35,7 @@ export default function Founder() {
                 As President, he oversees the strategic direction and overall functioning of the organisation, guiding its programmes, community outreach initiatives, and partnerships. His focus is on creating sustainable social impact through organised planning, responsible management, and active community participation.
               </p>
               <p className="mb-4">
-                Shabaaz Shaikh has been actively involved in initiating key programmes including free food distribution drives, awareness campaigns, community welfare initiatives, and volunteer engagement programmes. Through his efforts, the organisation continues to expand its network of volunteers, partners, and community supporters.
+                Rizwan has been actively involved in initiating key programmes including free food distribution drives, awareness campaigns, community welfare initiatives, and volunteer engagement programmes. Through his efforts, the organisation continues to expand its network of volunteers, partners, and community supporters.
               </p>
               <p>
                 He believes that collective efforts and responsible leadership can bring meaningful and lasting change to society, and continues to work towards building a stronger, more supportive, and socially responsible community.

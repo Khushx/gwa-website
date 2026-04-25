@@ -39,22 +39,22 @@ export default function ChairmanPresident() {
           </div>
         </div>
 
-        {/* Director - Rizwan Khan */}
+        {/* Director - Shabaaz Shaikh */}
         <div className="profile-card">
           <div className="profile-img-wrapper shadow-lg">
             <img
-              src="/images/Director.png"
-              alt="Rizwan Khan - Director"
+              src="/images/President.jpeg"
+              alt="Shabaaz Shaikh - Director"
             />
           </div>
           <div className="profile-details">
             <span className="badge badge-primary mb-4">Director</span>
-            <h2 className="mb-2">Rizwan Khan</h2>
+            <h2 className="mb-2">Shabaaz Shaikh</h2>
             <p className="text-primary-brand font-bold mb-6">Ghatkopar Welfare Association</p>
 
             <div className="text-secondary">
               <p className="mb-4">
-                <strong>Rizwan Khan</strong> serves as the Director of Ghatkopar Welfare Association, contributing to the planning, development, and management of the organisation’s social initiatives and operational activities.
+                <strong>Shabaaz Shaikh</strong> serves as the Director of Ghatkopar Welfare Association, contributing to the planning, development, and management of the organisation’s social initiatives and operational activities.
               </p>
               <p className="mb-4">
                 As Director, he plays a key role in coordinating programmes, guiding volunteer teams, and supporting the implementation of projects across different divisions of the organisation. His work focuses on ensuring that community initiatives are organised, effective, and aligned with the association’s long-term objectives.
@@ -63,7 +63,7 @@ export default function ChairmanPresident() {
                 He is actively involved in initiatives related to food distribution drives, community welfare programmes, awareness campaigns, and youth engagement activities, helping strengthen the organisation’s presence within the community.
               </p>
               <p>
-                Through his involvement in programme development and operational coordination, Rizwan Khan supports the association’s mission to create positive social impact through structured and community-driven initiatives.
+                Through his involvement in programme development and operational coordination, Shabaaz Shaikh supports the association’s mission to create positive social impact through structured and community-driven initiatives.
               </p>
             </div>
           </div>

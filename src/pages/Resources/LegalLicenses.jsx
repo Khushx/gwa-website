@@ -50,15 +50,15 @@ export default function LegalLicenses() {
   ];
 
   const documents = [
-    { name: "Certificate of Incorporation", size: "1.2 MB", date: "Jan 2024" },
-    { name: "Memorandum of Association (MoA)", size: "4.5 MB", date: "Jan 2024" },
-    { name: "Articles of Association (AoA)", size: "3.8 MB", date: "Jan 2024" },
-    { name: "PAN Card (Association Copy)", size: "0.8 MB", date: "Feb 2024" },
-    { name: "TAN Card (Association Copy)", size: "0.9 MB", date: "Feb 2024" },
-    { name: "12A Registration Certificate", size: "1.1 MB", date: "Mar 2024" },
-    { name: "80G Approval Document", size: "1.3 MB", date: "Mar 2024" },
-    { name: "NGO Darpan (NITI Aayog) Certificate", size: "1.0 MB", date: "Apr 2024" },
-    { name: "MSME / Udyam Registration Certificate", size: "1.5 MB", date: "Apr 2024" }
+    { name: "10AC Certificate", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA 10AC.pdf" },
+    { name: "AALCG Certificate", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA AALCG.pdf" },
+    { name: "Articles of Association (AoA) e-INC-31", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA e-AOA INC-31.pdf" },
+    { name: "Memorandum of Association (MoA) e-INC-13", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA e-MOA INC-13.pdf" },
+    { name: "E-PAN Card", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA E-Pan.pdf" },
+    { name: "Membership Certificate", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA MEMBERSHIP.pdf" },
+    { name: "SPICE Approval", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA SPICE APPROVAL.pdf" },
+    { name: "SPICE License", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA SPICE LICENSE.pdf" },
+    { name: "UDYAM Registration Certificate", size: "—", date: "Apr 2025", path: "/pdfs/legal & licences/GWA UDYAM.pdf" }
   ];
 
   return (
@@ -142,9 +142,9 @@ export default function LegalLicenses() {
                       <span className="text-xs text-secondary-text opacity-70 uppercase font-bold">{doc.size} • UPDATED {doc.date}</span>
                     </div>
                   </div>
-                  <button className="btn-icon bg-sand text-accent border-none hover-bg-accent hover-text-white transition-all shadow-sm" title="Download Document">
+                  <a href={doc.path} download className="btn-icon bg-sand text-accent border-none hover-bg-accent hover-text-white transition-all shadow-sm flex align-center justify-center" style={{ textDecoration: 'none' }} title="Download Document">
                     <Download size={18} />
-                  </button>
+                  </a>
                 </div>
               ))}
             </div>
