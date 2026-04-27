@@ -136,10 +136,10 @@ export default function Donation() {
       {/* CTA Bottom */}
       <section className="donation-footer section-padding text-center">
         <div className="container">
-          <button 
-            className="btn btn-primary" 
+          <button
+            className="btn btn-primary"
             style={{ padding: '1.2rem 4rem' }}
-            onClick={() => handleDownload('/pdfs/donation.pdf', 'GWA_80G_Certificate_Guide.pdf')}
+            onClick={() => handleDownload('/pdfs/legal-licenses/GWA-10AC.pdf', 'GWA_80G_Certificate_Guide.pdf')}
           >
             Download 80G Certificate Guide
           </button>

@@ -107,11 +107,11 @@ export default function Volunteer() {
                     <h2 className="mb-2">Ready to contribute?</h2>
                     <p className="mb-4" style={{ maxWidth: '600px', margin: '0 auto 2rem' }}>Register your interest today and our team will get back to you with the official membership application process.</p>
                     <div className="flex justify-center" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                        <button 
+                        <button
                             className="btn btn-primary"
-                            onClick={() => handleDownload('/pdfs/bylaws pasted.pdf', 'GWA_Registration_Form.pdf')}
+                            onClick={() => handleDownload('/pdfs/legal-licenses/GWA-MEMBERSHIP.pdf', 'GWA_Registration_Form.pdf')}
                         >
-                            Download Registration Form
+                            Download Membership Form
                         </button>
                         <Link to="/contact" className="btn btn-outline">Enquire Online</Link>
                     </div>
