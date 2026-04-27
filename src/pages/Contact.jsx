@@ -52,7 +52,7 @@ export default function Contact() {
               <Phone className="text-primary-brand" size={28} />
             </div>
             <h4>Call Us</h4>
-            <p className="text-sm text-secondary">+91 72087 44871 / 73737 30803</p>
+            <p className="text-sm text-secondary">+91 73737 30803</p>
           </div>
 
           <div className="card-flat contact-info-card card-hover-up text-center">

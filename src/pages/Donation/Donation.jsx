@@ -1,4 +1,5 @@
 import React from 'react';
+import { handleDownload } from '../../lib/downloadUtils';
 import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { Heart, Target, Users, ArrowRight, ShieldCheck, QrCode } from 'lucide-react';
 import './Donation.css';
@@ -135,7 +136,13 @@ export default function Donation() {
       {/* CTA Bottom */}
       <section className="donation-footer section-padding text-center">
         <div className="container">
-          <button className="btn btn-primary" style={{ padding: '1.2rem 4rem' }}>Download 80G Certificate Guide</button>
+          <button 
+            className="btn btn-primary" 
+            style={{ padding: '1.2rem 4rem' }}
+            onClick={() => handleDownload('/pdfs/donation.pdf', 'GWA_80G_Certificate_Guide.pdf')}
+          >
+            Download 80G Certificate Guide
+          </button>
           <p className="mt-2 text-secondary">Need assistance? Call our donation helpline at <span className="font-bold">+91 73737 30803</span></p>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { handleDownload } from '../../lib/downloadUtils';
 import PageLayout from '/src/components/layout/PageLayout.jsx';
 import { UserCheck, Shield, Users, Award, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -106,7 +107,12 @@ export default function Volunteer() {
                     <h2 className="mb-2">Ready to contribute?</h2>
                     <p className="mb-4" style={{ maxWidth: '600px', margin: '0 auto 2rem' }}>Register your interest today and our team will get back to you with the official membership application process.</p>
                     <div className="flex justify-center" style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-                        <button className="btn btn-primary">Download Registration Form</button>
+                        <button 
+                            className="btn btn-primary"
+                            onClick={() => handleDownload('/pdfs/bylaws pasted.pdf', 'GWA_Registration_Form.pdf')}
+                        >
+                            Download Registration Form
+                        </button>
                         <Link to="/contact" className="btn btn-outline">Enquire Online</Link>
                     </div>
                 </div>
